@@ -23,7 +23,7 @@ def init_weights(m):
 
 
 def load_data(fold):
-    data = sio.loadmat(r'C:/Users/xhx20/Desktop/BNC-DGHL/BNC-DGHL/Datasets/ALLASD{}_NETFC_SG_Pear.mat'.format(fold+1))
+    data = sio.loadmat('./Datasets/ALLASD{}_NETFC_SG_Pear.mat'.format(fold+1))
     X = data['net']
     X_train = data['net_train']
     X_valid = data['net_valid']
