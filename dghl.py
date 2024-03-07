@@ -248,7 +248,7 @@ if __name__ == '__main__':
             valid_acc = comput_accuracy(valid_hashcode, train_hashcode, train_hashcode_y, valid_hashcode_y)
             print('valid_loss = ', valid_loss, 'valid_acc = ', valid_acc)
 
-            # if epoch % n_evaluation_epochs == 0:
+            # if epoch % n_evaluation_epochs == 0:  # 实时显示损失值曲线
             #     plt.figure(1)
             #     ax.append(epoch + 1)
             #     ay.append(np.mean(train_loss))
